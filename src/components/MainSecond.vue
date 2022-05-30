@@ -53,6 +53,8 @@
           how those principles are applied in practice through a range of student-led <br>
           activities and competitions.
         </p>
+        <b-button variant="danger" class="dm-btn red-button">Read more</b-button>
+
       </div>
 
     </div>
@@ -95,7 +97,14 @@ export default {
   color: #e56768;
   font-size: 13px;
   margin-top: 5px;
-}.active{
+}.red-button{
+  background-color:#e56768;
+  color: #ffffff;
+  font-family: 'Fredoka One', cursive;
+  font-size: 13px;
+  cursor: pointer;
+}
+.active{
   background-color: #e56768;
 }.active p{
   color: #ffffffcc;

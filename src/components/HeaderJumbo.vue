@@ -13,7 +13,10 @@
       showcasing universities, courses, secondary schools etc..
       </p>
       
-       <b-button variant="warning" class="dm-button-yellow dm-btn dm-font">Search courses</b-button> 
+       <b-button variant="warning" class="dm-button-yellow dm-btn dm-font">
+         <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+         Search courses
+         </b-button> 
        <b-button variant="light" class="dm-btn dm-btn-white dm-font">Apply for university</b-button>
       
       
@@ -64,4 +67,6 @@ export default {
   left: 0;
   z-index: 999;
 }
+
+@import "~@fortawesome/fontawesome-free/css/all.min.css"
 </style>

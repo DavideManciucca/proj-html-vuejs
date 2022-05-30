@@ -2,8 +2,8 @@
   <div class="container-fluid dm-wrap">
     
     <div class="container dm-cont d-flex">
-      <img  class="logo" src="../assets/img/Clock-and-Bell.png" alt="">
-      <h3>University year</h3>
+      <img  class="logo " src="../assets/img/Clock-and-Bell.png" alt="">
+      <h3 class="red">University year</h3>
 
       <div class="d-flex">
 
@@ -48,9 +48,49 @@
       </div>
 
       </div>
+
+      <div><img class="logo" src="../assets/img/upcoming-events-calendar-icon.png" alt="calendar"></div>
+      <div><h3>Upcoming Events</h3></div>
+      <div class="d-flex event-box">
+
+      <div class="event-card">
+        <h5>Coaching Sessions</h5>
+       
+        <div class="data">
+          <img class="data-logo" src="../assets/img/upcoming-events-calendar-icon.png" alt="">
+          <span>20 May 21:30 PM</span>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam doloribus asperiores recusandae blanditiis suscipit voluptate debitis ab labore reprehenderit magnam,</p>
+        <button class="btn dm-btn ">+ Find more</button>
+      </div>
+
+      <div class="event-card">
+        <h5>Coaching Sessions</h5>
+       
+        <div class="data">
+          <img class="data-logo" src="../assets/img/upcoming-events-calendar-icon.png" alt="">
+          <span>20 May 21:30 PM</span>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam doloribus asperiores recusandae blanditiis suscipit voluptate debitis ab labore reprehenderit magnam,</p>
+        <button class="btn dm-btn ">+ Find more</button>
+      </div>
       
 
-
+      <div class="event-card">
+        <h5>Coaching Sessions</h5>
+       
+        <div class="data">
+          <img class="data-logo" src="../assets/img/upcoming-events-calendar-icon.png" alt="">
+          <span>20 May 21:30 PM</span>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam doloribus asperiores recusandae blanditiis suscipit voluptate debitis ab labore reprehenderit magnam,</p>
+        <button class="btn dm-btn ">+ Find more</button>
+        <!-- <b-button variant="danger" class="dm-btn dm-button-red">+ Find more</b-button> -->
+      </div>
+      
+      </div>
+     
+      <b-button variant="warning" class="yellow-btn dm-btn">View All Events</b-button>
     </div>
   
   </div>
@@ -72,12 +112,17 @@ export default {
 }.dm-cont .logo{
 height: 50px;
 width: 50px;
+margin-bottom: 20px;
+
 }.dm-cont h3{
   font-family: 'Fredoka One', cursive;
   color: #ffffff;
-  background-color: red;
+  // background-color: red;
   margin-bottom: 50px;
-}.timeline{
+}.red{
+  background-color: red;
+}
+.timeline{
   height: 130px;
 }.time-text{
   flex-direction: column;
@@ -97,7 +142,47 @@ width: 50px;
   transform: translateX(-150px);
 }.fourth{
   transform: translateX(-30px);
+}.event-box{
+justify-content: center;
+align-items: center;
+// height: 150px;
+// width: 800px;
+text-align: center;
+// background-color: red;
+}.event-card{
+  width: calc(100% / 3);
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 1rem;
+  background-color:#ffffff;
+}.event-card h5{
+  font-family: 'Fredoka One', cursive;
+  color: #454545;
+}.event-card p{
+  color: #8b8b8b;
+font-size: 13px;
+}.data-logo{
+  filter:invert(500%);
+  height: 20px;
+  width: 20px;
+}.data span {
+  font-size: 10px;
+  color: #8b8b8b;
+ 
+}.btn{
+  transform: translateY(40px);
+  border: 0;
+  font-family: 'Fredoka One', cursive;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #e56768;
+}.yellow-btn{
+  background-color: #e9d758;
+  margin-top: 40px;
 }
+
+
  
 
 </style>
