@@ -105,6 +105,7 @@ export default {
 <style lang="scss" scoped>
 .dm-wrap{
   background-color: #e56768;
+  // margin-top: 200px;
 }.dm-cont{
   justify-content: center;
   align-items: center;

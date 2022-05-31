@@ -2,9 +2,9 @@
   <div class="dm-jumbo container-fluid d-flex">
     <div class="fixed-left">
 
-      <div>tools 1</div>
-      <div>tools 2</div>
-      <div>tools 3</div>
+      <div class="fixed"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="fixed"><i class="fa-solid fa-book"></i></div>
+      <div class="fixed"><i class="fa-brands fa-chrome"></i></div>
 
     </div>
     <div class="box-jumbo">
@@ -14,10 +14,12 @@
       </p>
       
        <b-button variant="warning" class="dm-button-yellow dm-btn dm-font">
-         <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+         <i class="fa-solid fa-magnifying-glass"></i>
          Search courses
          </b-button> 
-       <b-button variant="light" class="dm-btn dm-btn-white dm-font">Apply for university</b-button>
+       <b-button variant="light" class="dm-btn dm-btn-white dm-font">
+         <i class="fa-solid fa-user-plus"></i>
+         Apply for university</b-button>
       
       
     </div>
@@ -65,7 +67,14 @@ export default {
 }.fixed-left{
   position: absolute;
   left: 0;
+  
   z-index: 999;
+  
+}.fixed{
+  box-shadow:5px 5px 15px 5px rgba(0,0,0,0.11);
+  padding: 7px;
+  
+  background-color:#e9d758  ;
 }
 
 @import "~@fortawesome/fontawesome-free/css/all.min.css"
