@@ -91,6 +91,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     width: calc(100% / 3);
+  }.sx-col p{
+    font-size: 13px;
   }h6{
     color: #ffffff;
     font-family: 'Fredoka One', cursive;
